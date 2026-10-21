@@ -1,0 +1,749 @@
+[
+ {
+  "slug": "text-to-pdf",
+  "title": "Text to PDF Converter",
+  "icon": "fa-solid fa-file-pdf",
+  "color": "red",
+  "desc": "Convert plain text into downloadable PDF documents.",
+  "cat": "pdf-tools",
+  "h1": "Text to PDF Converter"
+ },
+ {
+  "slug": "image-to-pdf",
+  "title": "Image to PDF Converter (Multiple Images)",
+  "icon": "fa-solid fa-images",
+  "color": "rose",
+  "desc": "Convert one or many JPG and PNG images into a single PDF file.",
+  "cat": "pdf-tools",
+  "h1": "Image to PDF Converter"
+ },
+ {
+  "slug": "pdf-merge",
+  "title": "Merge PDF Files",
+  "icon": "fa-solid fa-object-group",
+  "color": "red",
+  "desc": "Combine multiple PDF files into one PDF, in the order you choose.",
+  "cat": "pdf-tools",
+  "h1": "Merge PDF Files"
+ },
+ {
+  "slug": "pdf-extract-pages",
+  "title": "Extract PDF Pages",
+  "icon": "fa-solid fa-file-export",
+  "color": "orange",
+  "desc": "Pick pages from a PDF (like 1-3, 5) and save them as a new PDF.",
+  "cat": "pdf-tools",
+  "h1": "Extract PDF Pages"
+ },
+ {
+  "slug": "pdf-delete-pages",
+  "title": "Delete PDF Pages",
+  "icon": "fa-solid fa-file-circle-minus",
+  "color": "rose",
+  "desc": "Remove unwanted pages from a PDF and download the rest.",
+  "cat": "pdf-tools",
+  "h1": "Delete PDF Pages"
+ },
+ {
+  "slug": "pdf-rotate",
+  "title": "Rotate PDF Pages",
+  "icon": "fa-solid fa-rotate-right",
+  "color": "amber",
+  "desc": "Rotate all or selected pages of a PDF by 90, 180 or 270 degrees.",
+  "cat": "pdf-tools",
+  "h1": "Rotate PDF Pages"
+ },
+ {
+  "slug": "pdf-page-numbers",
+  "title": "Add Page Numbers to PDF",
+  "icon": "fa-solid fa-list-ol",
+  "color": "indigo",
+  "desc": "Add page numbers to every page of your PDF.",
+  "cat": "pdf-tools",
+  "h1": "Add Page Numbers to PDF"
+ },
+ {
+  "slug": "image-compressor",
+  "title": "Image Compressor",
+  "icon": "fa-solid fa-file-image",
+  "color": "indigo",
+  "desc": "Compress JPG and PNG images directly in browser.",
+  "cat": "image-tools",
+  "h1": "Image File Compressor"
+ },
+ {
+  "slug": "image-resizer",
+  "title": "Image Resizer",
+  "icon": "fa-solid fa-expand",
+  "color": "cyan",
+  "desc": "Resize images to exact width and height dimensions.",
+  "cat": "image-tools",
+  "h1": "Client-Side Image Resizer"
+ },
+ {
+  "slug": "image-converter",
+  "title": "Image Format Converter (PNG, JPG, WebP)",
+  "icon": "fa-solid fa-image",
+  "color": "rose",
+  "desc": "Convert images between PNG, JPG and WebP in your browser.",
+  "cat": "image-tools",
+  "h1": "Image Format Converter (PNG, JPG, WebP)"
+ },
+ {
+  "slug": "watermark-maker",
+  "title": "Image Watermark Adder",
+  "icon": "fa-solid fa-stamp",
+  "color": "amber",
+  "desc": "Add custom copyright text watermarks onto photos.",
+  "cat": "image-tools",
+  "h1": "Image Watermark Adder"
+ },
+ {
+  "slug": "image-rotate-flip",
+  "title": "Rotate & Flip Image",
+  "icon": "fa-solid fa-rotate",
+  "color": "blue",
+  "desc": "Rotate images 90 degrees or flip them horizontally and vertically.",
+  "cat": "image-tools",
+  "h1": "Rotate & Flip Image"
+ },
+ {
+  "slug": "image-to-base64",
+  "title": "Image to Base64 Converter",
+  "icon": "fa-solid fa-file-code",
+  "color": "stone",
+  "desc": "Convert any image to a Base64 data URL for HTML or CSS.",
+  "cat": "image-tools",
+  "h1": "Image to Base64 Converter"
+ },
+ {
+  "slug": "image-cropper",
+  "title": "Image Cropper",
+  "icon": "fa-solid fa-crop-simple",
+  "color": "emerald",
+  "desc": "Crop images to any size or ratio like 1:1, 4:3 and 16:9.",
+  "cat": "image-tools",
+  "h1": "Image Cropper"
+ },
+ {
+  "slug": "image-filters",
+  "title": "Photo Filters & Editor",
+  "icon": "fa-solid fa-wand-magic-sparkles",
+  "color": "fuchsia",
+  "desc": "Adjust brightness, contrast, blur, grayscale and sepia on your photos.",
+  "cat": "image-tools",
+  "h1": "Photo Filters & Editor"
+ },
+ {
+  "slug": "image-color-picker",
+  "title": "Pick Color from Image",
+  "icon": "fa-solid fa-eye-dropper",
+  "color": "violet",
+  "desc": "Click anywhere on an image to get its HEX and RGB color code.",
+  "cat": "image-tools",
+  "h1": "Pick Color from Image"
+ },
+ {
+  "slug": "favicon-generator",
+  "title": "Favicon Generator",
+  "icon": "fa-solid fa-star",
+  "color": "yellow",
+  "desc": "Create favicon and app icon PNGs (16, 32, 48, 180, 192, 512) from one image.",
+  "cat": "image-tools",
+  "h1": "Favicon Generator"
+ },
+ {
+  "slug": "word-counter",
+  "title": "Word & Character Counter",
+  "icon": "fa-solid fa-file-word",
+  "color": "blue",
+  "desc": "Count words, characters, and reading time instantly.",
+  "cat": "text-tools",
+  "h1": "Word & Character Counter"
+ },
+ {
+  "slug": "case-converter",
+  "title": "Text Case Converter",
+  "icon": "fa-solid fa-font",
+  "color": "indigo",
+  "desc": "Convert text to UPPERCASE, lowercase, and Title Case.",
+  "cat": "text-tools",
+  "h1": "Text Case Converter"
+ },
+ {
+  "slug": "lorem-ipsum",
+  "title": "Lorem Ipsum Generator",
+  "icon": "fa-solid fa-paragraph",
+  "color": "fuchsia",
+  "desc": "Generate placeholder dummy text for mockups.",
+  "cat": "text-tools",
+  "h1": "Lorem Ipsum Generator"
+ },
+ {
+  "slug": "text-reverser",
+  "title": "Text Reverser",
+  "icon": "fa-solid fa-arrows-left-right",
+  "color": "pink",
+  "desc": "Reverse text, words or lines instantly.",
+  "cat": "text-tools",
+  "h1": "Text Reverser"
+ },
+ {
+  "slug": "text-cleaner",
+  "title": "Remove Extra Spaces & Line Breaks",
+  "icon": "fa-solid fa-broom",
+  "color": "cyan",
+  "desc": "Clean text: remove extra spaces, empty lines and line breaks.",
+  "cat": "text-tools",
+  "h1": "Remove Extra Spaces & Line Breaks"
+ },
+ {
+  "slug": "duplicate-line-remover",
+  "title": "Remove Duplicate Lines & Sort",
+  "icon": "fa-solid fa-list-check",
+  "color": "teal",
+  "desc": "Remove duplicate lines, sort A-Z, reverse or shuffle any list.",
+  "cat": "text-tools",
+  "h1": "Remove Duplicate Lines & Sort"
+ },
+ {
+  "slug": "find-replace",
+  "title": "Find & Replace Text",
+  "icon": "fa-solid fa-magnifying-glass-arrow-right",
+  "color": "orange",
+  "desc": "Find and replace words in your text online, with optional regex.",
+  "cat": "text-tools",
+  "h1": "Find & Replace Text"
+ },
+ {
+  "slug": "slug-generator",
+  "title": "URL Slug Generator",
+  "icon": "fa-solid fa-link",
+  "color": "lime",
+  "desc": "Turn any title into a clean SEO-friendly URL slug.",
+  "cat": "text-tools",
+  "h1": "URL Slug Generator"
+ },
+ {
+  "slug": "html-to-text",
+  "title": "HTML to Plain Text",
+  "icon": "fa-brands fa-html5",
+  "color": "orange",
+  "desc": "Remove HTML tags and extract clean plain text.",
+  "cat": "text-tools",
+  "h1": "HTML to Plain Text"
+ },
+ {
+  "slug": "markdown-editor",
+  "title": "Markdown Editor",
+  "icon": "fa-brands fa-markdown",
+  "color": "violet",
+  "desc": "Write and preview Markdown documents live.",
+  "cat": "text-tools",
+  "h1": "Markdown Editor"
+ },
+ {
+  "slug": "number-to-words",
+  "title": "Number to Words Converter",
+  "icon": "fa-solid fa-spell-check",
+  "color": "amber",
+  "desc": "Convert numbers to English words with Lakh/Crore or Million/Billion system.",
+  "cat": "text-tools",
+  "h1": "Number to Words Converter"
+ },
+ {
+  "slug": "morse-code-translator",
+  "title": "Morse Code Translator",
+  "icon": "fa-solid fa-signal",
+  "color": "zinc",
+  "desc": "Translate text to Morse code and Morse code back to text.",
+  "cat": "text-tools",
+  "h1": "Morse Code Translator"
+ },
+ {
+  "slug": "text-diff-checker",
+  "title": "Text Difference Checker",
+  "icon": "fa-solid fa-code-compare",
+  "color": "sky",
+  "desc": "Compare two texts and highlight added and removed lines.",
+  "cat": "text-tools",
+  "h1": "Text Difference Checker"
+ },
+ {
+  "slug": "fancy-text-generator",
+  "title": "Fancy Text Generator",
+  "icon": "fa-solid fa-feather-pointed",
+  "color": "pink",
+  "desc": "Turn normal text into bold, italic, gothic, circled and other stylish fonts.",
+  "cat": "text-tools",
+  "h1": "Fancy Text Generator"
+ },
+ {
+  "slug": "email-url-extractor",
+  "title": "Email & URL Extractor",
+  "icon": "fa-solid fa-at",
+  "color": "teal",
+  "desc": "Extract all email addresses or links from any text.",
+  "cat": "text-tools",
+  "h1": "Email & URL Extractor"
+ },
+ {
+  "slug": "percentage-calculator",
+  "title": "Percentage Calculator",
+  "icon": "fa-solid fa-percent",
+  "color": "blue",
+  "desc": "Calculate scores, percentage values, and totals.",
+  "cat": "calculators",
+  "h1": "Percentage Calculator"
+ },
+ {
+  "slug": "age-calculator",
+  "title": "Age Calculator",
+  "icon": "fa-solid fa-calendar-days",
+  "color": "purple",
+  "desc": "Calculate your exact age in years, months, and days.",
+  "cat": "calculators",
+  "h1": "Exact Age Calculator"
+ },
+ {
+  "slug": "bmi-calculator",
+  "title": "BMI Health Calculator",
+  "icon": "fa-solid fa-heart-pulse",
+  "color": "red",
+  "desc": "Check your Body Mass Index and health category.",
+  "cat": "calculators",
+  "h1": "BMI Health Calculator"
+ },
+ {
+  "slug": "discount-calculator",
+  "title": "Discount Calculator",
+  "icon": "fa-solid fa-percent",
+  "color": "emerald",
+  "desc": "Calculate sale savings and final price after discount.",
+  "cat": "calculators",
+  "h1": "Discount & Savings Calculator"
+ },
+ {
+  "slug": "emi-calculator",
+  "title": "Loan EMI Calculator",
+  "icon": "fa-solid fa-calculator",
+  "color": "teal",
+  "desc": "Calculate monthly EMI and total interest for loans.",
+  "cat": "calculators",
+  "h1": "Loan EMI Calculator"
+ },
+ {
+  "slug": "gpa-calculator",
+  "title": "GPA & Grade Calculator",
+  "icon": "fa-solid fa-graduation-cap",
+  "color": "blue",
+  "desc": "Calculate exam marks percentage and GPA score.",
+  "cat": "calculators",
+  "h1": "GPA & Grade Calculator"
+ },
+ {
+  "slug": "split-bill",
+  "title": "Bill & Tip Splitter",
+  "icon": "fa-solid fa-receipt",
+  "color": "emerald",
+  "desc": "Split group restaurant bills and calculate tips easily.",
+  "cat": "calculators",
+  "h1": "Bill & Tip Splitter"
+ },
+ {
+  "slug": "compound-interest-calculator",
+  "title": "Compound Interest Calculator",
+  "icon": "fa-solid fa-chart-line",
+  "color": "emerald",
+  "desc": "Calculate compound and simple interest on savings or investments.",
+  "cat": "calculators",
+  "h1": "Compound Interest Calculator"
+ },
+ {
+  "slug": "date-difference",
+  "title": "Date Difference Calculator",
+  "icon": "fa-solid fa-calendar-week",
+  "color": "sky",
+  "desc": "Find the number of days, months and years between two dates.",
+  "cat": "calculators",
+  "h1": "Date Difference Calculator"
+ },
+ {
+  "slug": "zakat-calculator",
+  "title": "Zakat Calculator",
+  "icon": "fa-solid fa-hand-holding-heart",
+  "color": "green",
+  "desc": "Calculate Zakat (2.5%) on your cash, gold, silver and business assets.",
+  "cat": "calculators",
+  "h1": "Zakat Calculator"
+ },
+ {
+  "slug": "profit-margin-calculator",
+  "title": "Profit & Margin Calculator",
+  "icon": "fa-solid fa-sack-dollar",
+  "color": "yellow",
+  "desc": "Calculate profit, profit margin and markup from cost and selling price.",
+  "cat": "calculators",
+  "h1": "Profit & Margin Calculator"
+ },
+ {
+  "slug": "unit-converter",
+  "title": "Unit Converter",
+  "icon": "fa-solid fa-ruler-combined",
+  "color": "orange",
+  "desc": "Convert length, weight, feet, and distance units.",
+  "cat": "calculators",
+  "h1": "Unit Converter"
+ },
+ {
+  "slug": "gst-vat-calculator",
+  "title": "GST / VAT / Sales Tax Calculator",
+  "icon": "fa-solid fa-receipt",
+  "color": "blue",
+  "desc": "Add or remove GST, VAT or sales tax from any amount.",
+  "cat": "calculators",
+  "h1": "GST / VAT / Sales Tax Calculator"
+ },
+ {
+  "slug": "percentage-change-calculator",
+  "title": "Percentage Increase / Decrease Calculator",
+  "icon": "fa-solid fa-arrow-trend-up",
+  "color": "green",
+  "desc": "Find the percentage change between an old and a new value.",
+  "cat": "calculators",
+  "h1": "Percentage Increase / Decrease Calculator"
+ },
+ {
+  "slug": "calorie-calculator",
+  "title": "Daily Calorie Calculator",
+  "icon": "fa-solid fa-fire-flame-curved",
+  "color": "orange",
+  "desc": "Estimate your daily calorie needs for maintaining, losing or gaining weight.",
+  "cat": "calculators",
+  "h1": "Daily Calorie Calculator"
+ },
+ {
+  "slug": "simple-calculator",
+  "title": "Online Calculator",
+  "icon": "fa-solid fa-calculator",
+  "color": "slate",
+  "desc": "A clean online calculator for everyday math with percent and brackets.",
+  "cat": "calculators",
+  "h1": "Online Calculator"
+ },
+ {
+  "slug": "json-formatter",
+  "title": "JSON Formatter",
+  "icon": "fa-solid fa-code",
+  "color": "amber",
+  "desc": "Beautify, clean, and validate JSON data online.",
+  "cat": "developer-tools",
+  "h1": "JSON Formatter & Beautifier"
+ },
+ {
+  "slug": "base64-converter",
+  "title": "Base64 Encoder/Decoder",
+  "icon": "fa-solid fa-hashtag",
+  "color": "slate",
+  "desc": "Encode and decode text to Base64 format.",
+  "cat": "developer-tools",
+  "h1": "Base64 Encoder / Decoder"
+ },
+ {
+  "slug": "html-encoder",
+  "title": "HTML Entity Encoder",
+  "icon": "fa-solid fa-code",
+  "color": "indigo",
+  "desc": "Encode and decode HTML special entities.",
+  "cat": "developer-tools",
+  "h1": "HTML Entity Encoder / Decoder"
+ },
+ {
+  "slug": "url-encoder",
+  "title": "URL Encoder/Decoder",
+  "icon": "fa-solid fa-link",
+  "color": "sky",
+  "desc": "Encode and decode web URLs safely.",
+  "cat": "developer-tools",
+  "h1": "URL Encoder / Decoder"
+ },
+ {
+  "slug": "meta-tag-generator",
+  "title": "SEO Meta Tag Generator",
+  "icon": "fa-solid fa-tags",
+  "color": "cyan",
+  "desc": "Generate Open Graph and Google SEO meta tags.",
+  "cat": "developer-tools",
+  "h1": "SEO Meta Tag Generator"
+ },
+ {
+  "slug": "hash-generator",
+  "title": "Hash Generator (SHA-256, SHA-512)",
+  "icon": "fa-solid fa-fingerprint",
+  "color": "slate",
+  "desc": "Generate SHA-1, SHA-256, SHA-384 and SHA-512 hashes of any text.",
+  "cat": "developer-tools",
+  "h1": "Hash Generator (SHA-256, SHA-512)"
+ },
+ {
+  "slug": "uuid-generator",
+  "title": "UUID Generator",
+  "icon": "fa-solid fa-key",
+  "color": "indigo",
+  "desc": "Generate random version 4 UUIDs (GUIDs) in bulk.",
+  "cat": "developer-tools",
+  "h1": "UUID Generator"
+ },
+ {
+  "slug": "regex-tester",
+  "title": "Regex Tester",
+  "icon": "fa-solid fa-asterisk",
+  "color": "red",
+  "desc": "Test regular expressions online and see all matches and groups.",
+  "cat": "developer-tools",
+  "h1": "Regex Tester"
+ },
+ {
+  "slug": "timestamp-converter",
+  "title": "Unix Timestamp Converter",
+  "icon": "fa-solid fa-clock",
+  "color": "purple",
+  "desc": "Convert Unix timestamps to readable dates and back.",
+  "cat": "developer-tools",
+  "h1": "Unix Timestamp Converter"
+ },
+ {
+  "slug": "number-base-converter",
+  "title": "Binary, Decimal & Hex Converter",
+  "icon": "fa-solid fa-code",
+  "color": "violet",
+  "desc": "Convert numbers between binary, octal, decimal and hexadecimal.",
+  "cat": "developer-tools",
+  "h1": "Binary, Decimal & Hex Converter"
+ },
+ {
+  "slug": "color-converter",
+  "title": "HEX, RGB & HSL Color Converter",
+  "icon": "fa-solid fa-droplet",
+  "color": "fuchsia",
+  "desc": "Convert colors between HEX, RGB and HSL formats.",
+  "cat": "developer-tools",
+  "h1": "HEX, RGB & HSL Color Converter"
+ },
+ {
+  "slug": "csv-to-json",
+  "title": "CSV to JSON Converter",
+  "icon": "fa-solid fa-table",
+  "color": "teal",
+  "desc": "Convert CSV data to JSON online.",
+  "cat": "developer-tools",
+  "h1": "CSV to JSON Converter"
+ },
+ {
+  "slug": "color-picker",
+  "title": "Color Picker",
+  "icon": "fa-solid fa-palette",
+  "color": "violet",
+  "desc": "Pick colors and generate HEX and RGB codes.",
+  "cat": "developer-tools",
+  "h1": "Color Picker & Code Generator"
+ },
+ {
+  "slug": "json-to-csv",
+  "title": "JSON to CSV Converter",
+  "icon": "fa-solid fa-file-csv",
+  "color": "lime",
+  "desc": "Convert a JSON array of objects into CSV for Excel or Google Sheets.",
+  "cat": "developer-tools",
+  "h1": "JSON to CSV Converter"
+ },
+ {
+  "slug": "css-minifier",
+  "title": "CSS Minifier",
+  "icon": "fa-brands fa-css3-alt",
+  "color": "blue",
+  "desc": "Minify CSS code to reduce file size and speed up your website.",
+  "cat": "developer-tools",
+  "h1": "CSS Minifier"
+ },
+ {
+  "slug": "css-gradient-generator",
+  "title": "CSS Gradient Generator",
+  "icon": "fa-solid fa-swatchbook",
+  "color": "purple",
+  "desc": "Create beautiful CSS gradients and copy the code.",
+  "cat": "developer-tools",
+  "h1": "CSS Gradient Generator"
+ },
+ {
+  "slug": "jwt-decoder",
+  "title": "JWT Decoder",
+  "icon": "fa-solid fa-id-badge",
+  "color": "rose",
+  "desc": "Decode a JSON Web Token (JWT) and read its header and payload.",
+  "cat": "developer-tools",
+  "h1": "JWT Decoder"
+ },
+ {
+  "slug": "text-to-speech",
+  "title": "Text to Speech Reader",
+  "icon": "fa-solid fa-volume-high",
+  "color": "emerald",
+  "desc": "Convert written text into natural spoken voice audio.",
+  "cat": "media-social",
+  "h1": "Text to Speech Reader"
+ },
+ {
+  "slug": "speech-to-text",
+  "title": "Voice Typing (Speech to Text)",
+  "icon": "fa-solid fa-microphone",
+  "color": "rose",
+  "desc": "Convert spoken audio into typed text automatically.",
+  "cat": "media-social",
+  "h1": "Voice Typing (Speech to Text)"
+ },
+ {
+  "slug": "yt-thumbnail",
+  "title": "YouTube Thumbnail Downloader",
+  "icon": "fa-brands fa-youtube",
+  "color": "red",
+  "desc": "Download HD video thumbnails from any YouTube link.",
+  "cat": "media-social",
+  "h1": "YouTube Thumbnail Downloader"
+ },
+ {
+  "slug": "whatsapp-link",
+  "title": "WhatsApp Direct Link Generator",
+  "icon": "fa-brands fa-whatsapp",
+  "color": "green",
+  "desc": "Create wa.me chat links with custom pre-filled message.",
+  "cat": "media-social",
+  "h1": "WhatsApp Chat Link Generator"
+ },
+ {
+  "slug": "qr-generator",
+  "title": "QR Code Generator",
+  "icon": "fa-solid fa-qrcode",
+  "color": "yellow",
+  "desc": "Generate downloadable QR codes for links and text.",
+  "cat": "media-social",
+  "h1": "QR Code Generator"
+ },
+ {
+  "slug": "social-media-image-sizes",
+  "title": "Social Media Image Sizes Cheat Sheet",
+  "icon": "fa-solid fa-share-nodes",
+  "color": "cyan",
+  "desc": "Recommended image sizes for Facebook, Instagram, YouTube, X, LinkedIn, TikTok and more.",
+  "cat": "media-social",
+  "h1": "Social Media Image Sizes Cheat Sheet"
+ },
+ {
+  "slug": "password-generator",
+  "title": "Strong Password Generator",
+  "icon": "fa-solid fa-key",
+  "color": "green",
+  "desc": "Create secure and hard-to-crack passwords.",
+  "cat": "utilities",
+  "h1": "Strong Password Generator"
+ },
+ {
+  "slug": "random-number",
+  "title": "Random Number Generator",
+  "icon": "fa-solid fa-dice",
+  "color": "emerald",
+  "desc": "Generate random numbers within custom ranges.",
+  "cat": "utilities",
+  "h1": "Random Number Generator"
+ },
+ {
+  "slug": "roman-numeral",
+  "title": "Roman Numeral Converter",
+  "icon": "fa-solid fa-font",
+  "color": "amber",
+  "desc": "Convert numbers to Roman numerals and vice versa.",
+  "cat": "utilities",
+  "h1": "Roman Numeral Converter"
+ },
+ {
+  "slug": "timer-stopwatch",
+  "title": "Online Stopwatch",
+  "icon": "fa-solid fa-stopwatch",
+  "color": "lime",
+  "desc": "Track time during study, workout, or tasks.",
+  "cat": "utilities",
+  "h1": "Online Stopwatch"
+ },
+ {
+  "slug": "countdown-timer",
+  "title": "Countdown Timer",
+  "icon": "fa-solid fa-hourglass-half",
+  "color": "lime",
+  "desc": "Set a countdown timer with an alarm sound when time is up.",
+  "cat": "utilities",
+  "h1": "Countdown Timer"
+ },
+ {
+  "slug": "coin-flip-dice",
+  "title": "Coin Flip & Dice Roller",
+  "icon": "fa-solid fa-dice",
+  "color": "orange",
+  "desc": "Flip a coin or roll one or more dice online.",
+  "cat": "utilities",
+  "h1": "Coin Flip & Dice Roller"
+ },
+ {
+  "slug": "typing-speed-test",
+  "title": "Typing Speed Test",
+  "icon": "fa-solid fa-keyboard",
+  "color": "cyan",
+  "desc": "Test your typing speed in WPM and check your accuracy.",
+  "cat": "utilities",
+  "h1": "Typing Speed Test"
+ },
+ {
+  "slug": "random-name-picker",
+  "title": "Random Name Picker",
+  "icon": "fa-solid fa-shuffle",
+  "color": "fuchsia",
+  "desc": "Pick random winners from a list of names for giveaways and draws.",
+  "cat": "utilities",
+  "h1": "Random Name Picker"
+ },
+ {
+  "slug": "online-notepad",
+  "title": "Online Notepad",
+  "icon": "fa-solid fa-note-sticky",
+  "color": "yellow",
+  "desc": "A simple notepad that auto-saves in your browser. Download your notes as a text file.",
+  "cat": "utilities",
+  "h1": "Online Notepad"
+ },
+ {
+  "slug": "pomodoro-timer",
+  "title": "Pomodoro Timer",
+  "icon": "fa-solid fa-hourglass-start",
+  "color": "red",
+  "desc": "Stay focused with 25-minute work sessions and short breaks.",
+  "cat": "utilities",
+  "h1": "Pomodoro Timer"
+ },
+ {
+  "slug": "tasbih-counter",
+  "title": "Digital Tasbih Counter",
+  "icon": "fa-solid fa-circle-dot",
+  "color": "green",
+  "desc": "A simple online tasbih counter with targets of 33, 99 and 100.",
+  "cat": "utilities",
+  "h1": "Digital Tasbih Counter"
+ },
+ {
+  "slug": "password-strength-checker",
+  "title": "Password Strength Checker",
+  "icon": "fa-solid fa-shield-halved",
+  "color": "emerald",
+  "desc": "Check how strong your password is and get tips to improve it.",
+  "cat": "utilities",
+  "h1": "Password Strength Checker"
+ }
+]
