@@ -9,9 +9,10 @@ import json, re, os, html as H
 from pathlib import Path
 
 # ======================= SETTINGS (edit these) =======================
-SITE_URL = "https://yourdomain.com"      # <- put your real domain here (no slash at the end), then run this script again
+SITE_URL = "https://toolify-site-three.vercel.app"      # <- put your real domain here (no slash at the end), then run this script again
 SITE_NAME = "Toolify"
-TODAY = "2026-10-19"
+TODAY = "2026-10-22"
+ADS_ENABLED = False                      # keep False until Google AdSense approves you. Then set True and run this script again.
 # =====================================================================
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -21,8 +22,8 @@ BY = {t['slug']: t for t in TOOLS}
 CATS = [
  dict(slug='pdf-tools', name='PDF Tools', icon='fa-solid fa-file-pdf', color='red',
       h1='Free PDF Tools Online', short='Merge, split, rotate and create PDF files.',
-      intro='Merge, split, rotate, number and create PDF files right in your browser.',
-      about='Our free PDF tools help you handle everyday document work without installing software. You can merge several PDFs into one, extract or delete pages, rotate scanned pages, add page numbers, turn images into a PDF and convert text to PDF. Most PDF tools here run inside your browser, so your documents are not uploaded to a server.',
+      intro='Merge, split, rotate and number PDFs, and convert Word, images and text to PDF.',
+      about='Our free PDF tools help you handle everyday document work without installing software. You can merge several PDFs into one, extract or delete pages, rotate pages, add page numbers, convert Word to PDF, convert text PDFs to Word, turn images into a PDF and convert text to PDF. Most PDF tools here run inside your browser, so your documents are not uploaded to a server.',
       steps=['Choose your PDF file(s) or type your text.', 'Set the options you need, such as page numbers or rotation.', 'Click the button and download your new PDF.']),
  dict(slug='image-tools', name='Image Tools', icon='fa-solid fa-image', color='emerald',
       h1='Free Image Tools Online', short='Compress, resize, crop, convert and edit images.',
@@ -123,7 +124,7 @@ def header(R, cur_cat=None):
         <a class="m-home" href="{R}index.html"><i class="fa-solid fa-house"></i> Home</a>
         <p class="m-label">Tool Categories</p>{cats}
         <p class="m-label">Company</p>
-        <div class="m-links"><a href="{R}about.html">About Us</a><a href="{R}contact.html">Contact Us</a><a href="{R}privacy.html">Privacy Policy</a><a href="{R}terms.html">Terms &amp; Conditions</a></div>
+        <div class="m-links"><a href="{R}about.html">About Us</a><a href="{R}contact.html">Contact Us</a><a href="{R}privacy.html">Privacy Policy</a><a href="{R}terms.html">Terms &amp; Conditions</a><a href="{R}disclaimer.html">Disclaimer</a></div>
     </aside>
     <!--/HEADER-->'''
 
@@ -138,7 +139,7 @@ def footer(R):
                 <p class="mt-3 text-sm text-slate-400">{len(TOOLS)} free online tools for PDF, images, text, calculators and daily work. Fast, private and mobile friendly.</p></div>
             <div><h4>Categories</h4><ul>{cl}</ul></div>
             <div><h4>Popular Tools</h4><ul>{pl}</ul></div>
-            <div><h4>Company</h4><ul><li><a href="{R}about.html">About Us</a></li><li><a href="{R}contact.html">Contact Us</a></li><li><a href="{R}privacy.html">Privacy Policy</a></li><li><a href="{R}terms.html">Terms &amp; Conditions</a></li></ul></div>
+            <div><h4>Company</h4><ul><li><a href="{R}about.html">About Us</a></li><li><a href="{R}contact.html">Contact Us</a></li><li><a href="{R}privacy.html">Privacy Policy</a></li><li><a href="{R}terms.html">Terms &amp; Conditions</a></li><li><a href="{R}disclaimer.html">Disclaimer</a></li></ul></div>
         </div>
         <p class="footer-copy">&copy; 2026 {SITE_NAME}. All rights reserved.</p>
     </footer>
@@ -197,13 +198,12 @@ def build_tool(t):
         content = between(s, '<!--CONTENT-->', '<!--/CONTENT-->').strip()
         js = (between(s, '<!--TOOLJS-->', '<!--/TOOLJS-->') or '').strip()
         libs = re.findall(r'<script src="(https://(?!cdn\.tailwindcss)[^"]+)"', s.split('</head>')[0])
-        has_ad = 'id="adModal"' in s
     else:                        # first time: take apart the original page
         main = re.search(r'<main[^>]*>(.*)</main>', s, re.S).group(1)
         content = re.sub(r'<h1[^>]*>.*?</h1>', '', main, count=1, flags=re.S).strip()
         js = '\n'.join(f'<script>{x}</script>' for x in re.findall(r'<script>(.*?)</script>', s, re.S)).strip()
         libs = re.findall(r'<script src="(https://(?!cdn\.tailwindcss)[^"]+)"', s.split('</head>')[0])
-        has_ad = 'id="adModal"' in s
+    has_ad = ADS_ENABLED and t.get('ad', False)
     R = '../'
     title = f'{t["title"]} - Free Online Tool | {SITE_NAME}'
     if len(title) > 62: title = f'{t["title"]} | {SITE_NAME}'
@@ -270,6 +270,7 @@ SIMPLE = {
  'contact': ('Contact Us', 'Contact Toolify to suggest a new tool, report a bug or ask a question.'),
  'privacy': ('Privacy Policy', 'Read the Toolify privacy policy and how your data is handled when you use our free online tools.'),
  'terms': ('Terms & Conditions', 'Read the terms and conditions for using Toolify free online tools.'),
+ 'disclaimer': ('Disclaimer', 'Important disclaimer about the calculators, converters and information provided by Toolify free online tools.'),
 }
 def build_simple(name):
     p = ROOT / f'{name}.html'

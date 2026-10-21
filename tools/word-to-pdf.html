@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word to PDF Converter - Free Online Tool | Toolify</title>
+    <meta name="description" content="Convert Word (.docx) files to PDF with headings, bold text, tables and Urdu support. Free, fast and works in your browser - no signup needed.">
+    <link rel="canonical" href="https://toolify-site-three.vercel.app/tools/word-to-pdf.html">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#4f46e5">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Toolify">
+    <meta property="og:title" content="Word to PDF Converter - Free Online Tool | Toolify">
+    <meta property="og:description" content="Convert Word (.docx) files to PDF with headings, bold text, tables and Urdu support. Free, fast and works in your browser - no signup needed.">
+    <meta property="og:url" content="https://toolify-site-three.vercel.app/tools/word-to-pdf.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Word to PDF Converter - Free Online Tool | Toolify">
+    <meta name="twitter:description" content="Convert Word (.docx) files to PDF with headings, bold text, tables and Urdu support. Free, fast and works in your browser - no signup needed.">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Word to PDF Converter", "url": "https://toolify-site-three.vercel.app/tools/word-to-pdf.html", "description": "Convert Word (.docx) files to PDF with headings, bold text, tables and Urdu support. Free, fast and works in your browser - no signup needed.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://toolify-site-three.vercel.app/index.html"}, {"@type": "ListItem", "position": 2, "name": "PDF Tools", "item": "https://toolify-site-three.vercel.app/categories/pdf-tools.html"}, {"@type": "ListItem", "position": 3, "name": "Word to PDF Converter", "item": "https://toolify-site-three.vercel.app/tools/word-to-pdf.html"}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is Word to PDF Converter free to use?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Word to PDF Converter on Toolify is completely free. There is no registration and there are no hidden charges."}}, {"@type": "Question", "name": "Is my data safe and private?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. This tool runs in your own browser, so the text, images or files you use are not uploaded to our servers."}}, {"@type": "Question", "name": "Does this tool work on mobile phones?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It works in modern browsers on phones, tablets and computers. For the best experience use the latest version of Chrome, Edge, Safari or Firefox."}}]}</script>
+</head>
+<body class="tool-page">
+    <!--HEADER-->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="../index.html" class="logo"><span class="logo-mark"><i class="fa-solid fa-toolbox"></i></span>Toolify</a>
+            <div class="header-right">
+                <a href="../index.html" class="header-link">Home</a>
+                <button id="menuBtn" class="menu-btn" aria-label="Open menu" aria-controls="sideMenu" aria-expanded="false" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i><span>Menu</span></button>
+            </div>
+        </div>
+    </header>
+    <div id="menuOverlay" class="menu-overlay" onclick="toggleMenu(false)"></div>
+    <aside id="sideMenu" class="side-menu" aria-hidden="true" aria-label="Site menu">
+        <div class="side-head"><a href="../index.html" class="logo"><span class="logo-mark"><i class="fa-solid fa-toolbox"></i></span>Toolify</a><button class="side-close" aria-label="Close menu" onclick="toggleMenu(false)"><i class="fa-solid fa-xmark"></i></button></div>
+        <div class="side-search"><i class="fa-solid fa-magnifying-glass"></i><input id="menuSearch" type="search" placeholder="Search 85 tools..." oninput="filterMenu(this.value)"></div>
+        <a class="m-home" href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <p class="m-label">Tool Categories</p>
+        <div class="m-cat open" data-cat="pdf-tools">
+          <button class="m-cat-btn" onclick="toggleCat(this)" aria-expanded="true"><span class="m-ic bg-red-100 text-red-600"><i class="fa-solid fa-file-pdf"></i></span><span class="m-name">PDF Tools</span><span class="m-count">9</span><i class="fa-solid fa-chevron-down m-chev"></i></button>
+          <div class="m-list"><a class="m-all" href="../categories/pdf-tools.html">View all PDF Tools &rarr;</a><a href="../tools/text-to-pdf.html" data-t="text to pdf converter">Text to PDF Converter</a><a href="../tools/image-to-pdf.html" data-t="image to pdf converter (multiple images)">Image to PDF Converter (Multiple Images)</a><a href="../tools/word-to-pdf.html" data-t="word to pdf converter">Word to PDF Converter</a><a href="../tools/pdf-to-word.html" data-t="pdf to word converter">PDF to Word Converter</a><a href="../tools/pdf-merge.html" data-t="merge pdf files">Merge PDF Files</a><a href="../tools/pdf-extract-pages.html" data-t="extract pdf pages">Extract PDF Pages</a><a href="../tools/pdf-delete-pages.html" data-t="delete pdf pages">Delete PDF Pages</a><a href="../tools/pdf-rotate.html" data-t="rotate pdf pages">Rotate PDF Pages</a><a href="../tools/pdf-page-numbers.html" data-t="add page numbers to pdf">Add Page Numbers to PDF</a></div>
+        </div>
+        <div class="m-cat" data-cat="image-tools">
+          <button class="m-cat-btn" onclick="toggleCat(this)" aria-expanded="false"><span class="m-ic bg-emerald-100 text-emerald-600"><i class="fa-solid fa-image"></i></span><span class="m-name">Image Tools</span><span class="m-count">10</span><i class="fa-solid fa-chevron-down m-chev"></i></button>
+          <div class="m-list"><a class="m-all" href="../categories/image-tools.html">View all Image Tools &rarr;</a><a href="../tools/image-compressor.html" data-t="image compressor">Image Compressor</a><a href="../tools/image-resizer.html" data-t="image resizer">Image Resizer</a><a href="../tools/image-converter.html" data-t="image format converter (png, jpg, webp)">Image Format Converter (PNG, JPG, WebP)</a><a href="../tools/watermark-maker.html" data-t="image watermark adder">Image Watermark Adder</a><a href="../tools/image-rotate-flip.html" data-t="rotate &amp; flip image">Rotate &amp; Flip Image</a><a href="../tools/image-to-base64.html" data-t="image to base64 converter">Image to Base64 Converter</a><a href="../tools/image-cropper.html" data-t="image cropper">Image Cropper</a><a href="../tools/image-filters.html" data-t="photo filters &amp; editor">Photo Filters &amp; Editor</a><a href="../tools/image-color-picker.html" data-t="pick color from image">Pick Color from Image</a><a href="../tools/favicon-generator.html" data-t="favicon generator">Favicon Generator</a></div>
+        </div>
+        <div class="m-cat" data-cat="text-tools">
+          <button class="m-cat-btn" onclick="toggleCat(this)" aria-expanded="false"><span class="m-ic bg-indigo-100 text-indigo-600"><i class="fa-solid fa-font"></i></span><span class="m-name">Text Tools</span><span class="m-count">15</span><i class="fa-solid fa-chevron-down m-chev"></i></button>
+          <div class="m-list"><a class="m-all" href="../categories/text-tools.html">View all Text Tools &rarr;</a><a href="../tools/word-counter.html" data-t="word &amp; character counter">Word &amp; Character Counter</a><a href="../tools/case-converter.html" data-t="text case converter">Text Case Converter</a><a href="../tools/lorem-ipsum.html" data-t="lorem ipsum generator">Lorem Ipsum Generator</a><a href="../tools/text-reverser.html" data-t="text reverser">Text Reverser</a><a href="../tools/text-cleaner.html" data-t="remove extra spaces &amp; line breaks">Remove Extra Spaces &amp; Line Breaks</a><a href="../tools/duplicate-line-remover.html" data-t="remove duplicate lines &amp; sort">Remove Duplicate Lines &amp; Sort</a><a href="../tools/find-replace.html" data-t="find &amp; replace text">Find &amp; Replace Text</a><a href="../tools/slug-generator.html" data-t="url slug generator">URL Slug Generator</a><a href="../tools/html-to-text.html" data-t="html to plain text">HTML to Plain Text</a><a href="../tools/markdown-editor.html" data-t="markdown editor">Markdown Editor</a><a href="../tools/number-to-words.html" data-t="number to words converter">Number to Words Converter</a><a href="../tools/morse-code-translator.html" data-t="morse code translator">Morse Code Translator</a><a href="../tools/text-diff-checker.html" data-t="text difference checker">Text Difference Checker</a><a href="../tools/fancy-text-generator.html" data-t="fancy text generator">Fancy Text Generator</a><a href="../tools/email-url-extractor.html" data-t="email &amp; url extractor">Email &amp; URL Extractor</a></div>
+        </div>
+        <div class="m-cat" data-cat="calculators">
+          <button class="m-cat-btn" onclick="toggleCat(this)" aria-expanded="false"><span class="m-ic bg-teal-100 text-teal-600"><i class="fa-solid fa-calculator"></i></span><span class="m-name">Calculators</span><span class="m-count">16</span><i class="fa-solid fa-chevron-down m-chev"></i></button>
+          <div class="m-list"><a class="m-all" href="../categories/calculators.html">View all Calculators &rarr;</a><a href="../tools/percentage-calculator.html" data-t="percentage calculator">Percentage Calculator</a><a href="../tools/age-calculator.html" data-t="age calculator">Age Calculator</a><a href="../tools/bmi-calculator.html" data-t="bmi health calculator">BMI Health Calculator</a><a href="../tools/discount-calculator.html" data-t="discount calculator">Discount Calculator</a><a href="../tools/emi-calculator.html" data-t="loan emi calculator">Loan EMI Calculator</a><a href="../tools/gpa-calculator.html" data-t="gpa &amp; grade calculator">GPA &amp; Grade Calculator</a><a href="../tools/split-bill.html" data-t="bill &amp; tip splitter">Bill &amp; Tip Splitter</a><a href="../tools/compound-interest-calculator.html" data-t="compound interest calculator">Compound Interest Calculator</a><a href="../tools/date-difference.html" data-t="date difference calculator">Date Difference Calculator</a><a href="../tools/zakat-calculator.html" data-t="zakat calculator">Zakat Calculator</a><a href="../tools/profit-margin-calculator.html" data-t="profit &amp; margin calculator">Profit &amp; Margin Calculator</a><a href="../tools/unit-converter.html" data-t="unit converter">Unit Converter</a><a href="../tools/gst-vat-calculator.html" data-t="gst / vat / sales tax calculator">GST / VAT / Sales Tax Calculator</a><a href="../tools/percentage-change-calculator.html" data-t="percentage increase / decrease calculator">Percentage Increase / Decrease Calculator</a><a href="../tools/calorie-calculator.html" data-t="daily calorie calculator">Daily Calorie Calculator</a><a href="../tools/simple-calculator.html" data-t="online calculator">Online Calculator</a></div>
+        </div>
+        <div class="m-cat" data-cat="developer-tools">
+          <button class="m-cat-btn" onclick="toggleCat(this)" aria-expanded="false"><span class="m-ic bg-violet-100 text-violet-600"><i class="fa-solid fa-code"></i></span><span class="m-name">Developer Tools</span><span class="m-count">17</span><i class="fa-solid fa-chevron-down m-chev"></i></button>
+          <div class="m-list"><a class="m-all" href="../categories/developer-tools.html">View all Developer Tools &rarr;</a><a href="../tools/json-formatter.html" data-t="json formatter">JSON Formatter</a><a href="../tools/base64-converter.html" data-t="base64 encoder/decoder">Base64 Encoder/Decoder</a><a href="../tools/html-encoder.html" data-t="html entity encoder">HTML Entity Encoder</a><a href="../tools/url-encoder.html" data-t="url encoder/decoder">URL Encoder/Decoder</a><a href="../tools/meta-tag-generator.html" data-t="seo meta tag generator">SEO Meta Tag Generator</a><a href="../tools/hash-generator.html" data-t="hash generator (sha-256, sha-512)">Hash Generator (SHA-256, SHA-512)</a><a href="../tools/uuid-generator.html" data-t="uuid generator">UUID Generator</a><a href="../tools/regex-tester.html" data-t="regex tester">Regex Tester</a><a href="../tools/timestamp-converter.html" data-t="unix timestamp converter">Unix Timestamp Converter</a><a href="../tools/number-base-converter.html" data-t="binary, decimal &amp; hex converter">Binary, Decimal &amp; Hex Converter</a><a href="../tools/color-converter.html" data-t="hex, rgb &amp; hsl color converter">HEX, RGB &amp; HSL Color Converter</a><a href="../tools/csv-to-json.html" data-t="csv to json converter">CSV to JSON Converter</a><a href="../tools/color-picker.html" data-t="color picker">Color Picker</a><a href="../tools/json-to-csv.html" data-t="json to csv converter">JSON to CSV Converter</a><a href="../tools/css-minifier.html" data-t="css minifier">CSS Minifier</a><a href="../tools/css-gradient-generator.html" data-t="css gradient generator">CSS Gradient Generator</a><a href="../tools/jwt-decoder.html" data-t="jwt decoder">JWT Decoder</a></div>
+        </div>
+        <div class="m-cat" data-cat="media-social">
+          <button class="m-cat-btn" onclick="toggleCat(this)" aria-expanded="false"><span class="m-ic bg-cyan-100 text-cyan-600"><i class="fa-solid fa-share-nodes"></i></span><span class="m-name">Media & Social Tools</span><span class="m-count">6</span><i class="fa-solid fa-chevron-down m-chev"></i></button>
+          <div class="m-list"><a class="m-all" href="../categories/media-social.html">View all Media & Social Tools &rarr;</a><a href="../tools/text-to-speech.html" data-t="text to speech reader">Text to Speech Reader</a><a href="../tools/speech-to-text.html" data-t="voice typing (speech to text)">Voice Typing (Speech to Text)</a><a href="../tools/yt-thumbnail.html" data-t="youtube thumbnail downloader">YouTube Thumbnail Downloader</a><a href="../tools/whatsapp-link.html" data-t="whatsapp direct link generator">WhatsApp Direct Link Generator</a><a href="../tools/qr-generator.html" data-t="qr code generator">QR Code Generator</a><a href="../tools/social-media-image-sizes.html" data-t="social media image sizes cheat sheet">Social Media Image Sizes Cheat Sheet</a></div>
+        </div>
+        <div class="m-cat" data-cat="utilities">
+          <button class="m-cat-btn" onclick="toggleCat(this)" aria-expanded="false"><span class="m-ic bg-orange-100 text-orange-600"><i class="fa-solid fa-toolbox"></i></span><span class="m-name">Daily Utilities</span><span class="m-count">12</span><i class="fa-solid fa-chevron-down m-chev"></i></button>
+          <div class="m-list"><a class="m-all" href="../categories/utilities.html">View all Daily Utilities &rarr;</a><a href="../tools/password-generator.html" data-t="strong password generator">Strong Password Generator</a><a href="../tools/random-number.html" data-t="random number generator">Random Number Generator</a><a href="../tools/roman-numeral.html" data-t="roman numeral converter">Roman Numeral Converter</a><a href="../tools/timer-stopwatch.html" data-t="online stopwatch">Online Stopwatch</a><a href="../tools/countdown-timer.html" data-t="countdown timer">Countdown Timer</a><a href="../tools/coin-flip-dice.html" data-t="coin flip &amp; dice roller">Coin Flip &amp; Dice Roller</a><a href="../tools/typing-speed-test.html" data-t="typing speed test">Typing Speed Test</a><a href="../tools/random-name-picker.html" data-t="random name picker">Random Name Picker</a><a href="../tools/online-notepad.html" data-t="online notepad">Online Notepad</a><a href="../tools/pomodoro-timer.html" data-t="pomodoro timer">Pomodoro Timer</a><a href="../tools/tasbih-counter.html" data-t="digital tasbih counter">Digital Tasbih Counter</a><a href="../tools/password-strength-checker.html" data-t="password strength checker">Password Strength Checker</a></div>
+        </div>
+        <p class="m-label">Company</p>
+        <div class="m-links"><a href="../about.html">About Us</a><a href="../contact.html">Contact Us</a><a href="../privacy.html">Privacy Policy</a><a href="../terms.html">Terms &amp; Conditions</a><a href="../disclaimer.html">Disclaimer</a></div>
+    </aside>
+    <!--/HEADER-->
+    <section class="page-hero hero-red">
+        <div class="page-hero-inner">
+            <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> <i class="fa-solid fa-chevron-right"></i> <a href="../categories/pdf-tools.html">PDF Tools</a> <i class="fa-solid fa-chevron-right"></i> <span>Word to PDF Converter</span></nav>
+            <h1>Word to PDF Converter</h1>
+            <p>Convert Word (.docx) files to PDF with headings, bold text, tables and Urdu support.</p>
+        </div>
+    </section>
+    <main class="max-w-4xl mx-auto px-4 py-10">
+        <!--CONTENT-->
+<div class="bg-white p-6 rounded-lg shadow-md mb-10 max-w-xl mx-auto border-t-4 border-blue-500">
+<div class="mb-4"><label class="block text-sm font-bold mb-2">Select Word file (.docx):</label><input type="file" id="wpFile" placeholder="" accept=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document" class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-500"></div><button onclick="wordToPdf()" class="bg-blue-600 text-white px-6 py-3 rounded font-bold hover:bg-blue-700 w-full transition">Convert to PDF</button><div id="wpResult" class="hidden mt-6"><p class="text-sm text-gray-600 mb-3">Preview of your document. Press the button below, then choose <b>Save as PDF</b> in the print window.</p><iframe id="wpFrame" class="w-full h-96 border rounded bg-white"></iframe><button onclick="wpPrint()" class="mt-3 bg-green-600 text-white px-6 py-3 rounded font-bold w-full hover:bg-green-700"><i class="fa-solid fa-download"></i> Save as PDF</button><p class="text-xs text-gray-500 mt-3">Supports headings, bold, italic, underline, lists, tables and Urdu or other languages. Images, headers, footers and complex layouts are not included. Only .docx files work (not old .doc).</p></div>
+        </div>
+
+        <article class="prose max-w-none text-gray-700">
+            <h2 class="text-2xl font-bold mb-3">Convert Word to PDF Online</h2>
+            <p>Open your .docx file here and save it as a PDF in two taps. Your document is read inside your browser and is never uploaded.</p>
+        </article>
+        <!--/CONTENT-->
+        <section class="seo-block">
+            <h2>How to use Word to PDF Converter</h2>
+            <ol class="steps"><li>Choose your PDF file(s) or type your text.</li><li>Set the options you need, such as page numbers or rotation.</li><li>Click the button and download your new PDF.</li></ol>
+        </section>
+        <section class="seo-block">
+            <h2>Frequently Asked Questions</h2>
+            <details class="faq"><summary>Is Word to PDF Converter free to use?</summary><p>Yes. Word to PDF Converter on Toolify is completely free. There is no registration and there are no hidden charges.</p></details><details class="faq"><summary>Is my data safe and private?</summary><p>Yes. This tool runs in your own browser, so the text, images or files you use are not uploaded to our servers.</p></details><details class="faq"><summary>Does this tool work on mobile phones?</summary><p>Yes. It works in modern browsers on phones, tablets and computers. For the best experience use the latest version of Chrome, Edge, Safari or Firefox.</p></details>
+        </section>
+        <section class="seo-block">
+            <h2>More PDF Tools</h2>
+            <div class="tool-grid"><a href="../tools/text-to-pdf.html" class="tool-card" data-s="text to pdf converter convert plain text into downloadable pdf documents."><span class="tc-ic bg-red-100 text-red-600"><i class="fa-solid fa-file-pdf"></i></span><h3>Text to PDF Converter</h3><p>Convert plain text into downloadable PDF documents.</p></a><a href="../tools/image-to-pdf.html" class="tool-card" data-s="image to pdf converter (multiple images) convert one or many jpg and png images into a single pdf file."><span class="tc-ic bg-rose-100 text-rose-600"><i class="fa-solid fa-images"></i></span><h3>Image to PDF Converter (Multiple Images)</h3><p>Convert one or many JPG and PNG images into a single PDF file.</p></a><a href="../tools/pdf-to-word.html" class="tool-card" data-s="pdf to word converter convert text-based pdf files into an editable word (.docx) document."><span class="tc-ic bg-sky-100 text-sky-600"><i class="fa-solid fa-file-pdf"></i></span><h3>PDF to Word Converter</h3><p>Convert text-based PDF files into an editable Word (.docx) document.</p></a><a href="../tools/pdf-merge.html" class="tool-card" data-s="merge pdf files combine multiple pdf files into one pdf, in the order you choose."><span class="tc-ic bg-red-100 text-red-600"><i class="fa-solid fa-object-group"></i></span><h3>Merge PDF Files</h3><p>Combine multiple PDF files into one PDF, in the order you choose.</p></a></div>
+            <p class="mt-4"><a class="text-indigo-600 font-bold" href="../categories/pdf-tools.html">See all 9 PDF Tools &rarr;</a></p>
+        </section>
+    </main>
+    
+    <!--FOOTER-->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div><a href="../index.html" class="logo light"><span class="logo-mark"><i class="fa-solid fa-toolbox"></i></span>Toolify</a>
+                <p class="mt-3 text-sm text-slate-400">85 free online tools for PDF, images, text, calculators and daily work. Fast, private and mobile friendly.</p></div>
+            <div><h4>Categories</h4><ul><li><a href="../categories/pdf-tools.html">PDF Tools <span>(9)</span></a></li><li><a href="../categories/image-tools.html">Image Tools <span>(10)</span></a></li><li><a href="../categories/text-tools.html">Text Tools <span>(15)</span></a></li><li><a href="../categories/calculators.html">Calculators <span>(16)</span></a></li><li><a href="../categories/developer-tools.html">Developer Tools <span>(17)</span></a></li><li><a href="../categories/media-social.html">Media & Social Tools <span>(6)</span></a></li><li><a href="../categories/utilities.html">Daily Utilities <span>(12)</span></a></li></ul></div>
+            <div><h4>Popular Tools</h4><ul><li><a href="../tools/image-compressor.html">Image Compressor</a></li><li><a href="../tools/pdf-merge.html">Merge PDF Files</a></li><li><a href="../tools/image-to-pdf.html">Image to PDF Converter (Multiple Images)</a></li><li><a href="../tools/qr-generator.html">QR Code Generator</a></li><li><a href="../tools/word-counter.html">Word &amp; Character Counter</a></li><li><a href="../tools/age-calculator.html">Age Calculator</a></li></ul></div>
+            <div><h4>Company</h4><ul><li><a href="../about.html">About Us</a></li><li><a href="../contact.html">Contact Us</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms &amp; Conditions</a></li><li><a href="../disclaimer.html">Disclaimer</a></li></ul></div>
+        </div>
+        <p class="footer-copy">&copy; 2026 Toolify. All rights reserved.</p>
+    </footer>
+    <!--/FOOTER-->
+    <script src="../script.js"></script>
+    <!--TOOLJS-->
+<script>
+const WNS = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
+        const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        const kids = (el, name) => Array.from(el.children).filter(c => c.localName === name && c.namespaceURI === WNS);
+        const first = (el, name) => el ? kids(el, name)[0] : null;
+        function runHtml(r) {
+            const rp = first(r, 'rPr'); let html = '';
+            for (const c of Array.from(r.children)) {
+                if (c.localName === 't') html += esc(c.textContent);
+                else if (c.localName === 'tab') html += '&emsp;';
+                else if (c.localName === 'br' || c.localName === 'cr') html += '<br>';
+            }
+            if (!html) return '';
+            const on = n => { const e = first(rp, n); return e && e.getAttributeNS(WNS, 'val') !== 'false' && e.getAttributeNS(WNS, 'val') !== '0'; };
+            if (rp) {
+                if (on('b')) html = '<strong>' + html + '</strong>';
+                if (on('i')) html = '<em>' + html + '</em>';
+                if (first(rp, 'u') && first(rp, 'u').getAttributeNS(WNS, 'val') !== 'none') html = '<u>' + html + '</u>';
+                if (on('strike')) html = '<s>' + html + '</s>';
+                const sz = first(rp, 'sz'), col = first(rp, 'color'); let st = '';
+                if (sz) st += `font-size:${parseInt(sz.getAttributeNS(WNS, 'val')) / 2}pt;`;
+                if (col && /^[0-9A-Fa-f]{6}$/.test(col.getAttributeNS(WNS, 'val') || '')) st += `color:#${col.getAttributeNS(WNS, 'val')};`;
+                if (st) html = `<span style="${st}">${html}</span>`;
+            }
+            return html;
+        }
+        function paraHtml(p) {
+            const pp = first(p, 'pPr'); let tag = 'p', st = '', pre = '';
+            const style = pp && first(pp, 'pStyle') ? first(pp, 'pStyle').getAttributeNS(WNS, 'val') : '';
+            const hm = style.match(/^(?:Heading|heading)\s?([1-6])$/) || (style === 'Title' ? [0, 1] : null);
+            if (hm) tag = 'h' + hm[1];
+            const jc = pp && first(pp, 'jc') ? first(pp, 'jc').getAttributeNS(WNS, 'val') : '';
+            if (jc === 'center') st += 'text-align:center;'; else if (jc === 'right') st += 'text-align:right;'; else if (jc === 'both') st += 'text-align:justify;';
+            if ((pp && first(pp, 'numPr')) || /^List/i.test(style)) pre = '&bull; ';
+            let inner = '';
+            const walk = el => Array.from(el.children).forEach(c => { if (c.localName === 'r') inner += runHtml(c); else if (c.localName === 'hyperlink' || c.localName === 'smartTag' || c.localName === 'ins') walk(c); });
+            walk(p);
+            return `<${tag} style="${st}">${inner ? pre + inner : '&nbsp;'}</${tag}>`;
+        }
+        function tableHtml(t) {
+            let h = '<table>';
+            kids(t, 'tr').forEach(tr => { h += '<tr>'; kids(tr, 'tc').forEach(tc => { h += '<td>' + kids(tc, 'p').map(paraHtml).join('') + '</td>'; }); h += '</tr>'; });
+            return h + '</table>';
+        }
+        async function wordToPdf() {
+            const f = byId('wpFile').files[0];
+            if (!f) { alert("Please choose a Word file first!"); return; }
+            if (!/\.docx$/i.test(f.name)) { alert("Please choose a .docx file. Old .doc files are not supported. Open it in Word and use Save As .docx."); return; }
+            let xml;
+            try {
+                const zip = await JSZip.loadAsync(await f.arrayBuffer());
+                const entry = zip.file('word/document.xml'); if (!entry) throw new Error('x');
+                xml = new DOMParser().parseFromString(await entry.async('string'), 'application/xml');
+            } catch (e) { alert("Could not read this Word file. It may be damaged or password protected."); return; }
+            const body = xml.getElementsByTagNameNS(WNS, 'body')[0];
+            if (!body) { alert("This file has no readable content."); return; }
+            let html = '';
+            Array.from(body.children).forEach(c => { if (c.localName === 'p') html += paraHtml(c); else if (c.localName === 'tbl') html += tableHtml(c); });
+            const css = '@page{size:A4;margin:20mm}body{font-family:"Noto Naskh Arabic","Segoe UI",Calibri,Arial,sans-serif;font-size:12pt;line-height:1.5;color:#000}p{margin:0 0 8pt}h1{font-size:22pt}h2{font-size:18pt}h3{font-size:15pt}table{border-collapse:collapse;width:100%;margin:8pt 0}td{border:1px solid #444;padding:4pt;vertical-align:top}';
+            byId('wpFrame').srcdoc = `<!DOCTYPE html><html><head><meta charset="utf-8"><style>${css}</style></head><body dir="auto">${html}</body></html>`;
+            byId('wpResult').classList.remove('hidden');
+        }
+        function wpPrint() { const w = byId('wpFrame').contentWindow; w.focus(); w.print(); }
+    </script>
+    <!--/TOOLJS-->
+</body>
+</html>

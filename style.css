@@ -122,3 +122,20 @@ main input[type=file] { background: #f8fafc; }
 .site-footer h4 { font-weight: 800; margin-bottom: .8rem; color: #fff; } .site-footer ul { list-style: none; padding: 0; } .site-footer li { margin-bottom: .45rem; }
 .site-footer a { color: #94a3b8; text-decoration: none; font-size: .92rem; } .site-footer a:hover { color: #fff; } .site-footer li span { opacity: .6; }
 .footer-copy { max-width: 72rem; margin: 2rem auto 0; padding-top: 1.2rem; border-top: 1px solid #1e293b; text-align: center; font-size: .85rem; color: #64748b; }
+
+/* ---- Content pages (about, contact, privacy, terms, disclaimer) ---- */
+.doc { max-width: 48rem; margin: 0 auto; background: #fff; border: 1px solid #e2e8f0; border-radius: 1.2rem; padding: 0 1.4rem 2rem; box-shadow: 0 10px 30px rgba(15,23,42,.06); overflow: hidden; }
+@media (min-width: 640px) { .doc { padding: 0 2.4rem 2.6rem; } }
+.doc-hero { margin: 0 -1.4rem 1.6rem; padding: 2.2rem 1.4rem; color: #fff; background: linear-gradient(135deg, #4f46e5, #7c3aed 60%, #0891b2); } @media (min-width: 640px) { .doc-hero { margin: 0 -2.4rem 2rem; padding: 2.6rem 2.4rem; } }
+.doc-hero h1 { font-size: 2rem; font-weight: 800; line-height: 1.2; } .doc-hero p { opacity: .92; margin-top: .4rem; }
+.doc h2 { font-size: 1.25rem; font-weight: 800; color: #0f172a; margin: 1.8rem 0 .6rem; }
+.doc p, .doc li { color: #475569; line-height: 1.75; } .doc p { margin-bottom: .8rem; }
+.doc ul { list-style: disc; padding-left: 1.4rem; margin-bottom: .8rem; } .doc li { margin-bottom: .4rem; }
+.doc a { color: #4f46e5; font-weight: 600; } .doc li b, .doc p b { color: #1e293b; }
+.doc-grid { display: grid; gap: .9rem; margin: .6rem 0 1rem; } @media (min-width: 560px) { .doc-grid { grid-template-columns: repeat(2, 1fr); } }
+.info-card { display: block; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: .9rem; padding: 1rem 1.1rem; text-decoration: none; }
+a.info-card:hover { border-color: #c7d2fe; background: #eef2ff; } .info-card b { display: block; color: #0f172a; margin-bottom: .2rem; } .info-card span { color: #64748b; font-size: .92rem; line-height: 1.5; }
+.contact-form { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 1rem; padding: 1.2rem; }
+.contact-form label { display: block; font-weight: 700; font-size: .88rem; color: #334155; margin: .8rem 0 .3rem; }
+.contact-form input, .contact-form textarea { width: 100%; border: 1px solid #cbd5e1; border-radius: .65rem; padding: .7rem .8rem; background: #fff; }
+.contact-form button { margin-top: 1rem; border: 0; cursor: pointer; }
