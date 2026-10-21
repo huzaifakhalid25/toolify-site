@@ -139,3 +139,8 @@ a.info-card:hover { border-color: #c7d2fe; background: #eef2ff; } .info-card b {
 .contact-form label { display: block; font-weight: 700; font-size: .88rem; color: #334155; margin: .8rem 0 .3rem; }
 .contact-form input, .contact-form textarea { width: 100%; border: 1px solid #cbd5e1; border-radius: .65rem; padding: .7rem .8rem; background: #fff; }
 .contact-form button { margin-top: 1rem; border: 0; cursor: pointer; }
+
+/* ---- Fix: text on gradient banners must stay white ---- */
+.doc .doc-hero h1, .doc .doc-hero p { color: #fff; }
+.doc .doc-hero p { opacity: .95; margin-bottom: 0; }
+.page-hero h1, .page-hero p, .hero-inner h1, .hero-inner p { color: #fff; }
